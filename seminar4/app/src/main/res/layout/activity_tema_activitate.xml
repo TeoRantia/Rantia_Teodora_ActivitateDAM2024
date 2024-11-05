@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TemaActivitate">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Adauga tema"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="30dp" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Cerinta: "
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/idCerinta"
+            android:hint="Completeaza cerinta..." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Rezolvare: "
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/idRezolvare"
+            android:hint="Adauga rezolvare..." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Trimisa: "
+            android:textStyle="bold"
+            android:textSize="20dp" />
+        
+        <CheckBox
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/checkboxTrimitere"
+            android:text="DA" ></CheckBox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Verificata: "
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/checkboxVerificare"
+            android:text="DA" ></CheckBox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:text="Nota: "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/ratingBarNota"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:max="5"
+            android:numStars="5"
+            android:stepSize="1" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:id="@+id/butonTema"
+        android:layout_marginTop="20dp"
+        android:text="Adauga tema" />
+
+</LinearLayout>

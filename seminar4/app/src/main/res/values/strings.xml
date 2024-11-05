@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Seminar4_1098</string>
+    <string name="app_cerinta">Cerinta:</string>
+    <string name="app_rezolvare">Rezolvare:</string>
+    <string name="app_nota">Nota:</string>
+    <string name="app_trimisa">Trimisa:</string>
+    <string name="app_verificata">Verificata:</string>
+</resources>
