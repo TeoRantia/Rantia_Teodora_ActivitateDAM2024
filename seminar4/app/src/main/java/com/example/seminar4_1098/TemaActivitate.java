@@ -28,6 +28,22 @@ public class TemaActivitate extends AppCompatActivity {
             return insets;
         });
 
+        Intent it = getIntent();
+        if(it.hasExtra("tema")) {
+            Tema tema = it.getParcelableExtra("tema");
+            EditText etCerinta = findViewById(R.id.idCerinta);
+            EditText etRezolvare = findViewById(R.id.idRezolvare);
+            CheckBox cbTrimisa = findViewById(R.id.checkboxTrimitere);
+            CheckBox cbVerificata = findViewById(R.id.checkboxVerificare);
+            RatingBar rbNota = findViewById(R.id.ratingBarNota);
+
+            etCerinta.setText(tema.getCerinta());
+            etRezolvare.setText(tema.getRezolvare());
+            cbTrimisa.setChecked(tema.isTrimisa());
+            cbVerificata.setChecked(tema.isVerificata());
+            rbNota.setNumStars((int)tema.getNota());
+        }
+
         Button btn = findViewById(R.id.butonTema);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
